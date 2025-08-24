@@ -51,6 +51,13 @@ find . -name 'tests'          # will list all tests
 ### Running timing benchmark with google benchmark
 make eval
 
+When you do a git push, performance results will be built as a github action and
+performace plots are available at:
+
+https://rfabbri.github.io/alg-fabbri-IPRJ-UERJ/dev/bench/
+
+Check out the Action tab in github to see if the benchmark has been run.
+
 ## Folder structure
     *aulas/* notas de aula: previsao do que sera cada aula pratica, e um diario
                             do que foi coberto em aula

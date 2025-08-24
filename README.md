@@ -167,8 +167,12 @@ git push my main
 ```
 
 ##### Benchmark no fork
-Ao fazer esse push, o github iniciara uma action automatica de benchmark. Na aba
-Action voce vera graficos de performance do seu algoritmo.
+Ao fazer esse push, o github iniciara uma action automatica de benchmark. No endereco
+https://rfabbri.github.io/alg-fabbri-IPRJ-UERJ/dev/bench/
+voce vera graficos de performance do seu algoritmo. (ou, se voce fez fork, isso
+estara nesse endereco com seu user no lugar de rfabbri)
+Confira na aba Action do
+github para certificar-se que o benchmark foi executado.
 Se visualizar no repositorio do professor, um grafico de todos os alunos sera
 mostrado.
 
