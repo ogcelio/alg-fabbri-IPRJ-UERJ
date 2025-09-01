@@ -57,5 +57,5 @@ sorted_merge_3way(
         }
     }
 
-    return true; // stub
+    return true;
 }
