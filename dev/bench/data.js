@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756685722350,
+  "lastUpdate": 1756686943482,
   "repoUrl": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ",
   "entries": {
     "C++ Benchmark Results": [
@@ -450,6 +450,96 @@ window.BENCHMARK_DATA = {
             "value": 18.969363844171706,
             "unit": "ns/iter",
             "extra": "iterations: 36911648\ncpu: 18.967816527725866 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joaocelioaraujosander@gmail.com",
+            "name": "ogcelio",
+            "username": "ogcelio"
+          },
+          "committer": {
+            "email": "joaocelioaraujosander@gmail.com",
+            "name": "ogcelio",
+            "username": "ogcelio"
+          },
+          "distinct": true,
+          "id": "37dc06c51fbdfb2f43fd5bbfd8522aba81b5826d",
+          "message": "readicionando sorted_merge",
+          "timestamp": "2025-08-31T21:33:43-03:00",
+          "tree_id": "d55ec86ef202acf901f162cd6d08aaac0b3fd329",
+          "url": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ/commit/37dc06c51fbdfb2f43fd5bbfd8522aba81b5826d"
+        },
+        "date": 1756686943136,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/0",
+            "value": 21.263863388009785,
+            "unit": "ns/iter",
+            "extra": "iterations: 33609407\ncpu: 21.258885376942235 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1",
+            "value": 31.294832928871852,
+            "unit": "ns/iter",
+            "extra": "iterations: 20863599\ncpu: 31.2821995380567 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/2",
+            "value": 47.20593271792889,
+            "unit": "ns/iter",
+            "extra": "iterations: 15183867\ncpu: 47.192057728113674 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10",
+            "value": 182.24180390441984,
+            "unit": "ns/iter",
+            "extra": "iterations: 3766031\ncpu: 182.18533092266108 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/50",
+            "value": 876.214711866167,
+            "unit": "ns/iter",
+            "extra": "iterations: 815437\ncpu: 876.1285151397352 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100",
+            "value": 1977.6217251356077,
+            "unit": "ns/iter",
+            "extra": "iterations: 356656\ncpu: 1977.4450450854622 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/500",
+            "value": 9644.11744848924,
+            "unit": "ns/iter",
+            "extra": "iterations: 71393\ncpu: 9643.540305071923 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000",
+            "value": 20007.589339999347,
+            "unit": "ns/iter",
+            "extra": "iterations: 35197\ncpu: 20006.37710600335 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10000",
+            "value": 349835.8363184146,
+            "unit": "ns/iter",
+            "extra": "iterations: 2010\ncpu: 349799.3661691543 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100000",
+            "value": 3551326.557788768,
+            "unit": "ns/iter",
+            "extra": "iterations: 199\ncpu: 3550807.804020099 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000000",
+            "value": 34264891.34999997,
+            "unit": "ns/iter",
+            "extra": "iterations: 20\ncpu: 34261547.34999995 ns\nthreads: 1"
           }
         ]
       }
