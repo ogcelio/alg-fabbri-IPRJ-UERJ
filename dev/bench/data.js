@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756687073497,
+  "lastUpdate": 1757011262266,
   "repoUrl": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ",
   "entries": {
     "C++ Benchmark Results": [
@@ -630,6 +630,96 @@ window.BENCHMARK_DATA = {
             "value": 34365390.700000376,
             "unit": "ns/iter",
             "extra": "iterations: 20\ncpu: 34362057.4 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133393770+ogcelio@users.noreply.github.com",
+            "name": "João Célio",
+            "username": "ogcelio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84196d0f620f16d5b87d6fdb09361bb623706029",
+          "message": "Merge branch 'rfabbri:main' into main",
+          "timestamp": "2025-09-04T15:39:04-03:00",
+          "tree_id": "503ea5ab3b52a2ad6fc0978fc40823a6804c26a1",
+          "url": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ/commit/84196d0f620f16d5b87d6fdb09361bb623706029"
+        },
+        "date": 1757011261691,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/0",
+            "value": 20.87682881109206,
+            "unit": "ns/iter",
+            "extra": "iterations: 33365871\ncpu: 20.87570200100576 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1",
+            "value": 31.987995538673783,
+            "unit": "ns/iter",
+            "extra": "iterations: 22430994\ncpu: 31.985259904220026 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/2",
+            "value": 47.20332524493145,
+            "unit": "ns/iter",
+            "extra": "iterations: 15155034\ncpu: 47.20263860839905 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10",
+            "value": 182.35376370514885,
+            "unit": "ns/iter",
+            "extra": "iterations: 3759354\ncpu: 182.33473649994122 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/50",
+            "value": 862.9548215284102,
+            "unit": "ns/iter",
+            "extra": "iterations: 817469\ncpu: 862.940540864547 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100",
+            "value": 1993.877327365339,
+            "unit": "ns/iter",
+            "extra": "iterations: 355230\ncpu: 1993.67983841455 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/500",
+            "value": 9705.987536503339,
+            "unit": "ns/iter",
+            "extra": "iterations: 71569\ncpu: 9705.495032765579 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000",
+            "value": 19970.450197540275,
+            "unit": "ns/iter",
+            "extra": "iterations: 35942\ncpu: 19968.569111346063 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10000",
+            "value": 347126.4728260887,
+            "unit": "ns/iter",
+            "extra": "iterations: 2024\ncpu: 347109.4560276678 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100000",
+            "value": 3539913.9543148098,
+            "unit": "ns/iter",
+            "extra": "iterations: 197\ncpu: 3539602.878172593 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000000",
+            "value": 34267239.30000009,
+            "unit": "ns/iter",
+            "extra": "iterations: 20\ncpu: 34264988.55000002 ns\nthreads: 1"
           }
         ]
       }
