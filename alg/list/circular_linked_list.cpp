@@ -1,0 +1,105 @@
+#include "circular_linked_list.h"
+#include <iostream>
+#include <string>
+#include <limits>
+#include <string.h>
+#include <stdio.h> // For perror
+#include <stdlib.h> // For malloc/free
+
+
+
+void
+free_list(circular_list_item* head)
+{
+    circular_list_item *actual = head->prox; // Start with the first actual item
+    circular_list_item *tb_removed = NULL;
+    while (actual != head) {
+        tb_removed = actual;
+        actual = actual->prox;
+        free(tb_removed->string);
+        free(tb_removed);
+    }
+    // Finally, free the head dummy node itself
+    free(head);
+}
+
+void
+remove_item(circular_list_item* head, int index)
+{
+    if (index <= 0) {
+        std::cout << "You can't remove an item with an invalid index.\n" << std::endl;
+        return;
+    }
+
+    circular_list_item *actual = head;
+
+    int i = 0;
+
+    while ((i < (index - 1)) && (actual->prox != head)){
+        actual = actual->prox;
+        i++;
+    }
+
+    if (actual->prox == head){
+        std::cout << "You can't remove an item that doesn't exist.\n" << std::endl;
+        return;
+    }
+
+    circular_list_item *tb_removed = actual->prox;
+
+    actual->prox = tb_removed->prox;
+
+    free(tb_removed->string);
+    free(tb_removed);
+}
+
+void
+add_item(circular_list_item* head, int index, char* value)
+{
+    if (index <= 0) {
+        std::cout << "Cannot insert at an invalid index. Please use an index of 1 or greater.\n" << std::endl;
+        free(value); // Prevent memory leak if index is invalid
+        return;
+    }
+
+    circular_list_item *novo = (circular_list_item*) (malloc(sizeof(circular_list_item)));
+    if (novo == NULL) {
+        perror("Failed to allocate memory for new item");
+        free(value); // Prevent memory leak on malloc failure
+        return;
+    }
+
+    novo->string = value;
+
+    circular_list_item *actual = head;
+
+    int i = 1;
+
+    while ((i < index) && (actual->prox != head)){
+        actual = actual->prox;
+        i++;
+    }
+
+    novo->prox = actual->prox;
+    actual->prox = novo;
+}
+
+void
+print_list(circular_list_item* head)
+{
+    circular_list_item *actual = head->prox;
+
+    if (actual == head){
+        std::cout << "The list is empty.\n" << std::endl;
+        return;
+    }
+
+    int i = 1;
+
+    while (actual != head){
+        printf("Item: %d -- Value: %s\n", i, actual->string);
+        actual = actual->prox;
+        i++;
+    }
+    std::cout << std::endl; // For better spacing
+}

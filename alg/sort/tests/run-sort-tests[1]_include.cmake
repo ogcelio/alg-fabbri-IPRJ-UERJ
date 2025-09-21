@@ -1,0 +1,5 @@
+if(EXISTS "/home/synthyaga/.a/alg-fabbri-IPRJ-UERJ/alg/sort/tests/run-sort-tests[1]_tests.cmake")
+  include("/home/synthyaga/.a/alg-fabbri-IPRJ-UERJ/alg/sort/tests/run-sort-tests[1]_tests.cmake")
+else()
+  add_test(run-sort-tests_NOT_BUILT run-sort-tests_NOT_BUILT)
+endif()
