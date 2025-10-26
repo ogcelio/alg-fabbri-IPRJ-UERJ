@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1759451912413,
+  "lastUpdate": 1761499145873,
   "repoUrl": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ",
   "entries": {
     "C++ Benchmark Results": [
@@ -990,6 +990,96 @@ window.BENCHMARK_DATA = {
             "value": 34396910.64999977,
             "unit": "ns/iter",
             "extra": "iterations: 20\ncpu: 34391861.20000004 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "133393770+ogcelio@users.noreply.github.com",
+            "name": "João Célio",
+            "username": "ogcelio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0e5a1772cedef94e67b5936027f7c5b9715450fb",
+          "message": "Merge branch 'rfabbri:main' into main",
+          "timestamp": "2025-10-26T14:17:05-03:00",
+          "tree_id": "17c67110b279829beb7b3ed95cdda5bb27d0685d",
+          "url": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ/commit/0e5a1772cedef94e67b5936027f7c5b9715450fb"
+        },
+        "date": 1761499145392,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/0",
+            "value": 22.194336738983726,
+            "unit": "ns/iter",
+            "extra": "iterations: 31901302\ncpu: 22.18508131737068 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1",
+            "value": 34.71770727759972,
+            "unit": "ns/iter",
+            "extra": "iterations: 20011738\ncpu: 34.70810506313843 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/2",
+            "value": 51.440516663566555,
+            "unit": "ns/iter",
+            "extra": "iterations: 12968052\ncpu: 51.43696285301756 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10",
+            "value": 221.1504226054995,
+            "unit": "ns/iter",
+            "extra": "iterations: 3149746\ncpu: 221.13756315588626 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/50",
+            "value": 1073.8131781590491,
+            "unit": "ns/iter",
+            "extra": "iterations: 646327\ncpu: 1073.735542534971 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100",
+            "value": 2234.1062147755006,
+            "unit": "ns/iter",
+            "extra": "iterations: 314589\ncpu: 2233.772461847045 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/500",
+            "value": 10943.90998079974,
+            "unit": "ns/iter",
+            "extra": "iterations: 63542\ncpu: 10943.573305844957 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000",
+            "value": 22192.563841046638,
+            "unit": "ns/iter",
+            "extra": "iterations: 31179\ncpu: 22189.796529715524 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10000",
+            "value": 386945.8576965604,
+            "unit": "ns/iter",
+            "extra": "iterations: 1806\ncpu: 386891.3349944632 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100000",
+            "value": 3996533.171428577,
+            "unit": "ns/iter",
+            "extra": "iterations: 175\ncpu: 3995338.7999999984 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000000",
+            "value": 39000421.66666632,
+            "unit": "ns/iter",
+            "extra": "iterations: 18\ncpu: 38998429.388888806 ns\nthreads: 1"
           }
         ]
       }
