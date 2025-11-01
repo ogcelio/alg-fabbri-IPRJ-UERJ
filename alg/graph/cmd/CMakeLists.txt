@@ -1,2 +1,2 @@
-add_executable(tree-cmd tree-cmd.cpp)
-target_link_libraries(tree-cmd graph)
+add_executable(dynagraph-cmd dynagraph-cmd.c)
+target_link_libraries(dynagraph-cmd graph)

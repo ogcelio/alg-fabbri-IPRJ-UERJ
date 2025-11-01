@@ -1,3 +1,3 @@
-add_executable(bm-tree-cmd bm_tree.cpp)
-target_link_libraries(bm-tree-cmd graph benchmark::benchmark)
-set_property(GLOBAL APPEND PROPERTY BENCHMARK_TARGETS bm-tree-cmd)
+add_executable(bm-graph-cmd bm-graph.cpp)
+target_link_libraries(bm-graph-cmd graph benchmark::benchmark)
+set_property(GLOBAL APPEND PROPERTY BENCHMARK_TARGETS bm-graph-cmd)

@@ -1,8 +1,9 @@
 add_library(graph 
-  tree.cpp
+  dynagraph.c
 )
 # export public header path for other components
 target_include_directories(graph PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
 
 add_subdirectory(cmd)
 
