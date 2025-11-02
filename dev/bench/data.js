@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762111018073,
+  "lastUpdate": 1762111044019,
   "repoUrl": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ",
   "entries": {
     "C++ Benchmark Results": [
@@ -1440,6 +1440,96 @@ window.BENCHMARK_DATA = {
             "value": 34344571.349998884,
             "unit": "ns/iter",
             "extra": "iterations: 20\ncpu: 34342456.749999955 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "joaocelioaraujosander@gmail.com",
+            "name": "ogcelio",
+            "username": "ogcelio"
+          },
+          "committer": {
+            "email": "joaocelioaraujosander@gmail.com",
+            "name": "ogcelio",
+            "username": "ogcelio"
+          },
+          "distinct": true,
+          "id": "6a44ab94f282ba3a98e8a84491e07377f6a85dc8",
+          "message": "graph tests",
+          "timestamp": "2025-11-02T16:15:16-03:00",
+          "tree_id": "a058374e71ed30b0c385d29b3c6150e72ffbbf16",
+          "url": "https://github.com/ogcelio/alg-fabbri-IPRJ-UERJ/commit/6a44ab94f282ba3a98e8a84491e07377f6a85dc8"
+        },
+        "date": 1762111043092,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/0",
+            "value": 21.29527585909765,
+            "unit": "ns/iter",
+            "extra": "iterations: 33528403\ncpu: 21.290333780585975 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1",
+            "value": 31.275376752231868,
+            "unit": "ns/iter",
+            "extra": "iterations: 22367618\ncpu: 31.2727818849553 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/2",
+            "value": 47.14429870713043,
+            "unit": "ns/iter",
+            "extra": "iterations: 15186380\ncpu: 47.1423306278389 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10",
+            "value": 182.3786149206333,
+            "unit": "ns/iter",
+            "extra": "iterations: 3765055\ncpu: 182.36637100918847 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/50",
+            "value": 861.6477258521228,
+            "unit": "ns/iter",
+            "extra": "iterations: 815910\ncpu: 861.6355357821324 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100",
+            "value": 1977.2669126760006,
+            "unit": "ns/iter",
+            "extra": "iterations: 356626\ncpu: 1977.04706891814 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/500",
+            "value": 9636.142813289209,
+            "unit": "ns/iter",
+            "extra": "iterations: 71667\ncpu: 9634.740284928905 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000",
+            "value": 20495.897747835323,
+            "unit": "ns/iter",
+            "extra": "iterations: 35921\ncpu: 20493.412711227415 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/10000",
+            "value": 348294.40433925,
+            "unit": "ns/iter",
+            "extra": "iterations: 2028\ncpu: 348257.81163708074 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/100000",
+            "value": 3653092.557788993,
+            "unit": "ns/iter",
+            "extra": "iterations: 199\ncpu: 3652874.4673366826 ns\nthreads: 1"
+          },
+          {
+            "name": "sorted_merge_3way_fixture/BM_sorted_merge_3way/1000000",
+            "value": 34358809.900000155,
+            "unit": "ns/iter",
+            "extra": "iterations: 20\ncpu: 34356286.14999997 ns\nthreads: 1"
           }
         ]
       }
