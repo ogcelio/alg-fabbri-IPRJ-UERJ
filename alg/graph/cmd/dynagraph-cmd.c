@@ -34,7 +34,32 @@ int main() { // monta um grafo e testa
 /*  if ((peso_total = componente_conexo_sem_maximo(nos+4, nos_componente, &n_nos)) == -1 ) return 1;*/
 
   printf("Componente de %s tem %d nos e peso total %d\n", nos[4].nome, n_nos, peso_total);
-  for (int i = 0; i < n_nos; ++i) printf("%s\n", nos_componente[i]->nome);
+  for (int i = 0; i < n_nos; ++i){
+	printf("%s\n", nos_componente[i]->nome);
+	}
+
+  // --- Adjacency Matrix Conversion ---
+  printf("\n--- Teste Matriz de Adjacencia ---\n");
+
+  int n_matrix_nos = 0;
+  no_ptr matrix_nos[MAX_NUM_NOS];
+
+  // Starting from 'nos' (Petropolis) to get the whole graph component
+  int **adj_matrix = converte_para_matriz_adjacencia(nos, matrix_nos, &n_matrix_nos);
+
+  if (adj_matrix) {
+    printf("Nos na matriz (em ordem de linha/coluna): \n");
+    for(int i=0; i<n_matrix_nos; ++i) {
+      printf("  %d: %s\n", i, matrix_nos[i]->nome);
+    }
+    printf("\n");
+
+    imprime_matriz_adjacencia(adj_matrix, n_matrix_nos);
+    libera_matriz_adjacencia(adj_matrix, n_matrix_nos);
+  } else {
+    printf("Falha ao gerar a matriz de adjacencia.\n");
+  }
+  // --- Fim do Teste ---
 
   return 0;
 }

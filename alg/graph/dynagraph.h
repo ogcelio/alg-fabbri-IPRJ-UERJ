@@ -29,6 +29,10 @@ int componente_conexo_sem_maximo(no_ptr r, no_ptr nos[], int *n_nos);
 void renomeia_friburgo(const no *p_petro);
 void deleta_no_grafo(no_ptr r);
 
+int **converte_para_matriz_adjacencia(no_ptr r, no_ptr nos[], int *n_nos);
+void imprime_matriz_adjacencia(int **matrix, int n_nos);
+void libera_matriz_adjacencia(int **matrix, int n_nos);
+
 #ifdef __cplusplus
 }
 #endif

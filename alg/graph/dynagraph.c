@@ -54,6 +54,9 @@ int componente_conexo(no_ptr r, int max_conexao, no_ptr nos[], int *n_nos);
 int componente_conexo_sem_maximo(no_ptr r, no_ptr nos[], int *n_nos);
 void renomeia_friburgo(const no *p_petro);
 void deleta_no_grafo(no_ptr r);
+int **converte_para_matriz_adjacencia(no_ptr r, no_ptr nos[], int *n_nos);
+void imprime_matriz_adjacencia(int **matrix, int n_nos);
+void libera_matriz_adjacencia(int **matrix, int n_nos);
 
 
 
@@ -142,6 +145,100 @@ componente_conexo(no_ptr r, int max_conexao, no_ptr nos[], int *n_nos)
       peso_total += v->peso + componente_conexo(v->no, max_conexao, nos, n_nos);
   }
   return peso_total;
+}
+
+
+//------------------------------------------------------------------------------
+// Helper function to find the index of a node in an array of nodes.
+// Returns -1 if not found.
+static int
+find_node_index(no_ptr node, no_ptr nodes[], int n_nodes)
+{
+  for (int i = 0; i < n_nodes; i++) {
+    if (nodes[i] == node) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+//------------------------------------------------------------------------------
+// Converts the graph to an adjacency matrix.
+// The caller is responsible for freeing the returned matrix.
+// The node pointers are stored in `nos`, and the number of nodes in `n_nos`.
+int **
+converte_para_matriz_adjacencia(no_ptr r, no_ptr nos[], int *n_nos)
+{
+  // 1. Find all nodes in the component and store them in `nos`
+  *n_nos = 0;
+  componente_conexo_sem_maximo(r, nos, n_nos);
+  int num_nodes = *n_nos;
+
+  if (num_nodes == 0) {
+    return NULL;
+  }
+
+  // 2. Allocate the adjacency matrix
+  int **matrix = (int **) malloc(num_nodes * sizeof(int *));
+  if (matrix == NULL) {
+    fprintf(stderr, "Memory allocation error for matrix\n");
+    return NULL;
+  }
+  for (int i = 0; i < num_nodes; i++) {
+    matrix[i] = (int *) calloc(num_nodes, sizeof(int));
+    if (matrix[i] == NULL) {
+      fprintf(stderr, "Memory allocation error for matrix row\n");
+      // Free already allocated memory
+      for (int j = 0; j < i; j++) {
+        free(matrix[j]);
+      }
+      free(matrix);
+      return NULL;
+    }
+  }
+
+  // 3. Populate the adjacency matrix
+  for (int i = 0; i < num_nodes; i++) {
+    no_ptr current_node = nos[i];
+    for (lista_ptr v = current_node->conexoes; v != NULL; v = v->next) {
+      int j = find_node_index(v->no, nos, num_nodes);
+      if (j != -1) {
+        matrix[i][j] = v->peso;
+      }
+    }
+  }
+
+  return matrix;
+}
+
+//------------------------------------------------------------------------------
+// Prints the adjacency matrix.
+void
+imprime_matriz_adjacencia(int **matrix, int n_nos)
+{
+  if (matrix == NULL || n_nos == 0) {
+    printf("Matrix is empty or invalid.\n");
+    return;
+  }
+  printf("Adjacency Matrix (%dx%d):\n", n_nos, n_nos);
+  for (int i = 0; i < n_nos; i++) {
+    for (int j = 0; j < n_nos; j++) {
+      printf("%d\t", matrix[i][j]);
+    }
+    printf("\n");
+  }
+}
+
+//------------------------------------------------------------------------------
+// Frees the memory allocated for the adjacency matrix.
+void
+libera_matriz_adjacencia(int **matrix, int n_nos)
+{
+  if (matrix == NULL) return;
+  for (int i = 0; i < n_nos; i++) {
+    free(matrix[i]);
+  }
+  free(matrix);
 }
 
 //------------------------------------------------------------------------------
