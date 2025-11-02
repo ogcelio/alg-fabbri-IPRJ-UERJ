@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graph Visualizer</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style type="text/css">
+    #mynetwork {
+      width: 800px;
+      height: 600px;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    {id: 1, label: 'Petropolis'},
+    {id: 2, label: 'Teresopolis'},
+    {id: 3, label: 'Niteroi'},
+    {id: 4, label: 'Rio'},
+    {id: 5, label: 'Friburgo'}
+  ]);
+
+  // create an array with edges
+  var edges = new vis.DataSet([
+    {from: 1, to: 2, label: '50'},
+    {from: 1, to: 4, label: '65'},
+    {from: 2, to: 4, label: '100'},
+    {from: 2, to: 5, label: '75'},
+    {from: 3, to: 4, label: '15'},
+    {from: 3, to: 5, label: '120'},
+    {from: 4, to: 5, label: '140'}
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {};
+  var network = new vis.Network(container, data, options);
+</script>
+
+</body>
+</html>
