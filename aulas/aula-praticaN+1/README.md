@@ -46,7 +46,7 @@ representacao 2) Bloco de string dado por um valor com tamanho maximo,
 sendo que, assim, todaos os nos BigStringNode tem o mesmo tamanho na memoria,
 a string ocupa mais ou menos espaco desse blocl:
 
-```
+```C
 #define MAX_CHAR_PER_BLOCK 4096  // algum multiplo de 2, exemplos:
                                  // 64 para alinhar com cacheline tipico (64 bytes)
                                  // 4096 page = aprox 64 cache lines
@@ -73,3 +73,5 @@ BigString.
 
 3.2) S.inserirSimples("hello",i)   // insere string simples "hello" na posicao (caractere) i de S
 
+
+# Todas as aulas praticas presenciais deve, posteriormente, estar 100% feitas em casa antes da proxima aula pratica
