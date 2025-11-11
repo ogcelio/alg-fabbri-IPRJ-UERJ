@@ -1,7 +1,7 @@
 # Practical Lecture (07nov25) BigString - estrutura ligada de blocos textuais, aula 2
 
 - Inicio 9:00. Horarios abaixo indicam horario do sorteio
-- Uso de IA permitido (gemini-cli)
+- Uso auxiliar de IA permitido (gemini-cli)
 
 ## 1 Compilar repo alg, testar, benchmark (Avaliacao 9:10 outra chance 9:10)
 git pull
