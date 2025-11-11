@@ -68,13 +68,13 @@ BigString.
     
 ### Etapas Intermediarias    
 
-3.1) 
+#### 3.1) 
 
 ```C
 S.concat(A): concatena A na string S ("append")
 ```
 
-3.2) 
+#### 3.2) 
 ```C
 S.inserirSimples("hello",i)   // insere string simples "hello" na posicao (caractere) i de S
 ```
