@@ -66,13 +66,17 @@ BigString.
     S.inserir(A, 1013) --> insere BigString A na posicao 1013 (apos caractere 1013)
 ```
     
-    
 ### Etapas Intermediarias    
 
+3.1) 
 
-3.1) S.concat(A): concatena A na string S ("append")
+```C
+S.concat(A): concatena A na string S ("append")
+```
 
-3.2) S.inserirSimples("hello",i)   // insere string simples "hello" na posicao (caractere) i de S
-
+3.2) 
+```C
+S.inserirSimples("hello",i)   // insere string simples "hello" na posicao (caractere) i de S
+```
 
 # Todas as aulas praticas presenciais devem, posteriormente, estar 100% finalizadas em casa antes da proxima aula pratica
