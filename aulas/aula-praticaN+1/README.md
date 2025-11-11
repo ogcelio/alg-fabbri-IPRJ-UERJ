@@ -74,4 +74,4 @@ BigString.
 3.2) S.inserirSimples("hello",i)   // insere string simples "hello" na posicao (caractere) i de S
 
 
-# Todas as aulas praticas presenciais deve, posteriormente, estar 100% feitas em casa antes da proxima aula pratica
+# Todas as aulas praticas presenciais devem, posteriormente, estar 100% feitas em casa antes da proxima aula pratica
