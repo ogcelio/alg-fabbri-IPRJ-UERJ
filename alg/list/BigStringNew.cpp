@@ -229,6 +229,11 @@ main()
   insert_name(13, ".nomeio.", s);
 
   cout << "String nova: " << r->string << endl;
-
+  
+  free(s);
+  free(p);
+  free(q);
+  free(r);
+  
   return 0;
 }
