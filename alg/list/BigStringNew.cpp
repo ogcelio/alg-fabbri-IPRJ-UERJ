@@ -4,7 +4,7 @@
 
 using namespace std;
 
-#define TAMANHO_MAX 100
+#define TAMANHO_MAX 64
 
 class BigString
 {
@@ -234,6 +234,6 @@ main()
   free(p);
   free(q);
   free(r);
-  
+
   return 0;
 }
